@@ -5,10 +5,11 @@ import java.util.Random;
 
 public class sloving_lab1 {
     public static void main (String []args) {
-        //task1();
-        //task2(args);
-        //task3();
+        task1();
+        task2(args);
+        task3();
         task4();
+        task5();
     }
 
     public static void task1() {
@@ -93,5 +94,16 @@ public class sloving_lab1 {
         }
     }
 
+    public static void task5() {
+        int n; Scanner scaner = new Scanner(System.in);
+        System.out.print("Input factorial: ");
+        n = scaner.nextInt();
+        int res = 1;
+        for (int i = 1; i < n; ++i) {
+            res += res * (i);
+        }
+
+        System.out.println(n + "! = " + res);
+    }
 
 }
