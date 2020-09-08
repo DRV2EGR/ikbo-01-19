@@ -11,6 +11,7 @@ public class MovableRectangle implements Movable {
 
 
 
+
     @Override
     public int hashCode() {
         return topLeft != null ? topLeft.hashCode() : 0;
