@@ -1,4 +1,6 @@
-package ru.mirea.ikbo01_19.practice3.Rogov;
+package Movable;
+
+import Movable.Movable;
 
 public class MovablePoint implements Movable {
     private int x;
@@ -31,6 +33,14 @@ public class MovablePoint implements Movable {
     @Override
     public void moveRight() {
         this.x++;
+    }
+
+    public int getxSpeed() {
+        return xSpeed;
+    }
+
+    public int getySpeed() {
+        return ySpeed;
     }
 
     @Override

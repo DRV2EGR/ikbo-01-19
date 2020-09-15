@@ -1,4 +1,4 @@
-package ru.mirea.ikbo01_19.practice3.Rogov;
+package Movable;
 
 public interface Movable {
     public void moveUp();

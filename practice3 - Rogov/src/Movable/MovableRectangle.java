@@ -1,4 +1,6 @@
-package ru.mirea.ikbo01_19.practice3.Rogov;
+package Movable;
+
+import Movable.Movable;
 
 public class MovableRectangle implements Movable {
     private MovablePoint topLeft;
@@ -9,12 +11,9 @@ public class MovableRectangle implements Movable {
         bottomRight = new MovablePoint(x2, y2, xSpeed, ySpeed);
     }
 
-
-
-
-    @Override
-    public int hashCode() {
-        return topLeft != null ? topLeft.hashCode() : 0;
+    public boolean speed_equals() {
+        return ((topLeft.getxSpeed() == bottomRight.getxSpeed()) &&
+                (topLeft.getySpeed() == bottomRight.getySpeed()));
     }
 
     @Override
@@ -40,4 +39,14 @@ public class MovableRectangle implements Movable {
         topLeft.moveRight();
         bottomRight.moveRight();
     }
+
+    @Override
+    public String toString() {
+        return "MovableRectangle{" +
+                "topLeft=" + topLeft +
+                ", bottomRight=" + bottomRight +
+                '}';
+    }
+
+
 }
